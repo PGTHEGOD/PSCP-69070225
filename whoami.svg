@@ -1,0 +1,73 @@
+<svg width="800" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- BACKGROUND -->
+  <rect width="800" height="260" fill="#050805"/>
+
+  <!-- MATRIX RAIN -->
+  <g font-family="monospace" font-size="14" fill="#00ff41" opacity="0.22">
+
+    <text x="60">
+      010111
+      <animate attributeName="y" from="-100" to="300" dur="5s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="120">
+      110100
+      <animate attributeName="y" from="-50" to="300" dur="7s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="180">
+      001011
+      <animate attributeName="y" from="-120" to="300" dur="6.5s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="240">
+      111000
+      <animate attributeName="y" from="-30" to="300" dur="4.8s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="300">
+      100101
+      <animate attributeName="y" from="-80" to="300" dur="6s" repeatCount="indefinite"/>
+    </text>
+
+  </g>
+
+  <!-- TERMINAL TEXT -->
+  <g font-family="Fira Code, monospace" font-size="18">
+
+    <!-- prompt -->
+    <text x="20" y="50" fill="#00ff41">┌──(park㉿pgthegod)-[~/]</text>
+    <text x="20" y="80" fill="#00ff41">└─$ whoami</text>
+
+    <!-- typing effect -->
+    <defs>
+      <clipPath id="reveal">
+        <rect x="20" y="95" width="0" height="30">
+          <animate attributeName="width"
+                   from="0" to="400"
+                   dur="2.5s"
+                   fill="freeze"/>
+        </rect>
+      </clipPath>
+    </defs>
+
+    <text x="20" y="120" fill="#58a6ff" font-size="22" clip-path="url(#reveal)">
+      Park (@pgthegod)
+    </text>
+
+    <!-- next prompt -->
+    <text x="20" y="160" fill="#00ff41">┌──(park㉿pgthegod)-[~/]</text>
+    <text x="20" y="190" fill="#00ff41">└─$</text>
+
+    <!-- blinking cursor -->
+    <rect x="45" y="178" width="10" height="18" fill="#00ff41">
+      <animate attributeName="opacity"
+               values="1;0;1"
+               dur="0.8s"
+               repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+
+</svg>
