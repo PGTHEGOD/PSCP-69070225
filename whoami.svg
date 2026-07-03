@@ -58,15 +58,17 @@
 
     <!-- next prompt -->
     <text x="20" y="160" fill="#00ff41">┌──(park㉿pgthegod)-[~/]</text>
-    <text x="20" y="190" fill="#00ff41">└─$</text>
+    <!-- blinking cursor aligned properly -->
+<text x="20" y="190" font-family="Fira Code, monospace" font-size="18" fill="#00ff41">
+  └─$
+</text>
 
-    <!-- blinking cursor -->
-    <rect x="45" y="178" width="10" height="18" fill="#00ff41">
-      <animate attributeName="opacity"
-               values="1;0;1"
-               dur="0.8s"
-               repeatCount="indefinite"/>
-    </rect>
+<rect x="70" y="176" width="10" height="18" fill="#00ff41">
+  <animate attributeName="opacity"
+           values="1;0;1"
+           dur="0.8s"
+           repeatCount="indefinite"/>
+</rect>
 
   </g>
 
